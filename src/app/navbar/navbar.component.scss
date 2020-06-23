@@ -10,11 +10,20 @@ ul {
 }
 
 li {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+}
+
+.logo, a {
+  height: 3rem;
+  
+}
+
+.logo {
+  display: none;
 }
 
 a {
-  height: 3rem;
   padding: 0 0.5rem;
   font-size: 2rem;
   font-family: $header-font-stack;
@@ -30,5 +39,9 @@ a {
 @media only screen and (min-width: 480px) {
   ul {
     justify-content: flex-start;
+  }
+
+  .logo {
+    display: inline-block;
   }
 } 
