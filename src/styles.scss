@@ -2,13 +2,14 @@
 
 // import & set fonts
 @import './assets/fonts/fonts.scss';
+@import './theme.scss';
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Rubik', sans-serif;
+  font-family: $header-font-stack;
 }
 
 p, blockquote, pre, ul, li, a {
-  font-family: 'Karla', sans-serif;
+  font-family: $body-font-stack;
 }
 
 h1 {

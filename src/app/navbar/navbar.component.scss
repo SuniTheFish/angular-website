@@ -1,4 +1,4 @@
-@import '~src/theme-colors.scss';
+@import '~src/theme.scss';
 
 ul {
   height: 3rem;
@@ -17,6 +17,7 @@ li {
 
 a {
   font-size: 2rem;
+  font-family: $header-font-stack;
   text-decoration: none;
   text-align: center;
   color: $mid;
