@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
+// import & set fonts
 @import './assets/fonts/fonts.scss';
 
 h1, h2, h3, h4, h5, h6 {
@@ -9,3 +10,10 @@ h1, h2, h3, h4, h5, h6 {
 p, blockquote, pre {
   font-family: 'Karla', sans-serif;
 }
+
+// set theme colors
+$bright: #ff6700;
+$mid: #759aab;
+$dark: #390099;
+$body-light: #595a4a;
+$body-dark: #363635;
