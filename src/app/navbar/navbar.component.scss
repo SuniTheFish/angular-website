@@ -14,9 +14,8 @@ li {
   justify-content: center;
 }
 
-.logo, a {
+.logo, a, img {
   height: 3rem;
-  
 }
 
 .logo {
@@ -42,6 +41,6 @@ a {
   }
 
   .logo {
-    display: inline-block;
+    display: flex;
   }
 } 
