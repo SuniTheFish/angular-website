@@ -1,90 +1,10 @@
 @font-face {
-    font-family: 'Rubik';
-    src: local('Rubik Light'), local('Rubik-Light'),
-        url('assets/fonts/Rubik-Light.woff2') format('woff2'),
-        url('assets/fonts/Rubik-Light.woff') format('woff');
-    font-weight: 300;
+    font-family: 'Spectral';
+    src: local('Spectral SemiBold'), local('Spectral-SemiBold'),
+        url('assets/fonts/Spectral-SemiBold.woff2') format('woff2'),
+        url('assets/fonts/Spectral-SemiBold.woff') format('woff');
+    font-weight: 600;
     font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Rubik';
-    src: local('Rubik Black Italic'), local('Rubik-BlackItalic'),
-        url('assets/fonts/Rubik-BlackItalic.woff2') format('woff2'),
-        url('assets/fonts/Rubik-BlackItalic.woff') format('woff');
-    font-weight: 900;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Rubik';
-    src: local('Rubik Light Italic'), local('Rubik-LightItalic'),
-        url('assets/fonts/Rubik-LightItalic.woff2') format('woff2'),
-        url('assets/fonts/Rubik-LightItalic.woff') format('woff');
-    font-weight: 300;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Rubik';
-    src: local('Rubik Bold'), local('Rubik-Bold'),
-        url('assets/fonts/Rubik-Bold.woff2') format('woff2'),
-        url('assets/fonts/Rubik-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Rubik';
-    src: local('Rubik Black'), local('Rubik-Black'),
-        url('assets/fonts/Rubik-Black.woff2') format('woff2'),
-        url('assets/fonts/Rubik-Black.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Rubik';
-    src: local('Rubik Regular'), local('Rubik-Regular'),
-        url('assets/fonts/Rubik-Regular.woff2') format('woff2'),
-        url('assets/fonts/Rubik-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Karla';
-    src: local('Karla Italic'), local('Karla-Italic'),
-        url('assets/fonts/Karla-Italic.woff2') format('woff2'),
-        url('assets/fonts/Karla-Italic.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Rubik';
-    src: local('Rubik Bold Italic'), local('Rubik-BoldItalic'),
-        url('assets/fonts/Rubik-BoldItalic.woff2') format('woff2'),
-        url('assets/fonts/Rubik-BoldItalic.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Rubik';
-    src: local('Rubik Medium Italic'), local('Rubik-MediumItalic'),
-        url('assets/fonts/Rubik-MediumItalic.woff2') format('woff2'),
-        url('assets/fonts/Rubik-MediumItalic.woff') format('woff');
-    font-weight: 500;
-    font-style: italic;
     font-display: swap;
 }
 
@@ -99,12 +19,92 @@
 }
 
 @font-face {
-    font-family: 'Rubik';
-    src: local('Rubik Medium'), local('Rubik-Medium'),
-        url('assets/fonts/Rubik-Medium.woff2') format('woff2'),
-        url('assets/fonts/Rubik-Medium.woff') format('woff');
-    font-weight: 500;
+    font-family: 'Spectral';
+    src: local('Spectral Bold'), local('Spectral-Bold'),
+        url('assets/fonts/Spectral-Bold.woff2') format('woff2'),
+        url('assets/fonts/Spectral-Bold.woff') format('woff');
+    font-weight: bold;
     font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: local('Spectral Light Italic'), local('Spectral-LightItalic'),
+        url('assets/fonts/Spectral-LightItalic.woff2') format('woff2'),
+        url('assets/fonts/Spectral-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: local('Spectral ExtraLight'), local('Spectral-ExtraLight'),
+        url('assets/fonts/Spectral-ExtraLight.woff2') format('woff2'),
+        url('assets/fonts/Spectral-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: local('Karla Bold'), local('Karla-Bold'),
+        url('assets/fonts/Karla-Bold.woff2') format('woff2'),
+        url('assets/fonts/Karla-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: local('Spectral Medium Italic'), local('Spectral-MediumItalic'),
+        url('assets/fonts/Spectral-MediumItalic.woff2') format('woff2'),
+        url('assets/fonts/Spectral-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: local('Spectral SemiBold Italic'), local('Spectral-SemiBoldItalic'),
+        url('assets/fonts/Spectral-SemiBoldItalic.woff2') format('woff2'),
+        url('assets/fonts/Spectral-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: local('Spectral Regular'), local('Spectral-Regular'),
+        url('assets/fonts/Spectral-Regular.woff2') format('woff2'),
+        url('assets/fonts/Spectral-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: local('Spectral ExtraBold'), local('Spectral-ExtraBold'),
+        url('assets/fonts/Spectral-ExtraBold.woff2') format('woff2'),
+        url('assets/fonts/Spectral-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: local('Spectral Italic'), local('Spectral-Italic'),
+        url('assets/fonts/Spectral-Italic.woff2') format('woff2'),
+        url('assets/fonts/Spectral-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
     font-display: swap;
 }
 
@@ -120,21 +120,61 @@
 
 @font-face {
     font-family: 'Karla';
-    src: local('Karla Bold'), local('Karla-Bold'),
-        url('assets/fonts/Karla-Bold.woff2') format('woff2'),
-        url('assets/fonts/Karla-Bold.woff') format('woff');
-    font-weight: bold;
+    src: local('Karla Italic'), local('Karla-Italic'),
+        url('assets/fonts/Karla-Italic.woff2') format('woff2'),
+        url('assets/fonts/Karla-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: local('Spectral Light'), local('Spectral-Light'),
+        url('assets/fonts/Spectral-Light.woff2') format('woff2'),
+        url('assets/fonts/Spectral-Light.woff') format('woff');
+    font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Rubik';
-    src: local('Rubik Italic'), local('Rubik-Italic'),
-        url('assets/fonts/Rubik-Italic.woff2') format('woff2'),
-        url('assets/fonts/Rubik-Italic.woff') format('woff');
-    font-weight: normal;
+    font-family: 'Spectral';
+    src: local('Spectral ExtraBold Italic'), local('Spectral-ExtraBoldItalic'),
+        url('assets/fonts/Spectral-ExtraBoldItalic.woff2') format('woff2'),
+        url('assets/fonts/Spectral-ExtraBoldItalic.woff') format('woff');
+    font-weight: 800;
     font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: local('Spectral ExtraLight Italic'), local('Spectral-ExtraLightItalic'),
+        url('assets/fonts/Spectral-ExtraLightItalic.woff2') format('woff2'),
+        url('assets/fonts/Spectral-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: local('Spectral Bold Italic'), local('Spectral-BoldItalic'),
+        url('assets/fonts/Spectral-BoldItalic.woff2') format('woff2'),
+        url('assets/fonts/Spectral-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: local('Spectral Medium'), local('Spectral-Medium'),
+        url('assets/fonts/Spectral-Medium.woff2') format('woff2'),
+        url('assets/fonts/Spectral-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
     font-display: swap;
 }
 
