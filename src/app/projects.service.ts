@@ -11,8 +11,6 @@ import { Project } from './project';
 export class ProjectsService {
   private projectsUrl = 'https://api.github.com/users/SuniTheFish/repos';
 
-  private projects: Project[] = [];
-
   constructor(private http: HttpClient) { }
 
   getProjects(): Observable<Project[]> {
@@ -23,7 +21,7 @@ export class ProjectsService {
 
   private handleError<T>(operation = 'operation', result?: T) {
     return (err: any): Observable<T> => {
-      console.error(err);
+      console.error('Error in operation', operation, ': ', err);
       return of(result as T);
     };
   }
