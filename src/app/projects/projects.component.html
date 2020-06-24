@@ -2,9 +2,9 @@
   <h1>Projects</h1>
 </div>
 <div *ngIf="projects; else loadingProjects">
-  <div class="project" *ngFor="let project of projects.slice(start, start + size)">
+  <div *ngFor="let project of projects.slice(start, start + size)" class="project">
     <h2>{{project.name | dashToSpace | camelAddSpaces | titlecase}}</h2>
-    <p>{{project.description || '(no description)'}}</p>
+    <markdown ngPreserveWhitespaces>{{project.description || '(no description)'}}</markdown>
   </div>
 </div>
 <ng-template #loadingProjects>

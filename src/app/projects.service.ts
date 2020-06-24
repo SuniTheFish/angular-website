@@ -25,6 +25,6 @@ export class ProjectsService {
     return (err: any): Observable<T> => {
       console.error(err);
       return of(result as T);
-    }
+    };
   }
 }
