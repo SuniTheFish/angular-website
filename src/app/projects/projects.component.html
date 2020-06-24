@@ -4,11 +4,16 @@
 <div *ngIf="projects; else loadingProjects">
   <div *ngFor="let project of projects.slice(start, start + size)" class="project">
     <h2>
-      <a href="{{project.homepage || project.html_url}}">
+      <a href="{{project.homepage || project.html_url}}" target="_blank"
+        rel="noopener noreferrer">
         {{project.name | dashToSpace | camelAddSpaces | titlecase}}
       </a>
     </h2>
-    <h3 *ngIf="project.homepage"><a href="{{project.html_url}}">(repo)</a></h3>
+    <h3 *ngIf="project.homepage">
+      <a href="{{project.html_url}}" target="_blank" rel="noopener noreferrer">
+        (repo)
+      </a>
+    </h3>
     <markdown ngPreserveWhitespaces>{{project.description || '(no description)'}}</markdown>
   </div>
 </div>
