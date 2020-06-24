@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { DashToSpacePipe } from './dash-to-space.pipe';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     ProjectsComponent,
     PageNotFoundComponent,
     NavbarComponent,
+    DashToSpacePipe,
   ],
   imports: [
     BrowserModule,
