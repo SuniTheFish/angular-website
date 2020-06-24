@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { catchError } from 'rxjs/operators';
+import { catchError, tap } from 'rxjs/operators';
 import { HttpClient } from '@angular/common/http';
 
 import { Project } from './project';
@@ -9,14 +9,20 @@ import { Project } from './project';
   providedIn: 'root'
 })
 export class ProjectsService {
+  private cache: Project[] = [];
   private projectsUrl = 'https://api.github.com/users/SuniTheFish/repos';
 
   constructor(private http: HttpClient) { }
 
   getProjects(): Observable<Project[]> {
-    return this.http.get<Project[]>(this.projectsUrl).pipe(
-      catchError(this.handleError<Project[]>('getProjects', []))
-    );
+    if (!this.cache.length) {
+      return this.http.get<Project[]>(this.projectsUrl).pipe(
+        tap((projects) => this.cache = projects),
+        catchError(this.handleError<Project[]>('getProjects', []))
+      );
+    } else {
+      return of(this.cache);
+    }
   }
 
   private handleError<T>(operation = 'operation', result?: T) {
