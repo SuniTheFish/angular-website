@@ -27,11 +27,4 @@ export class ProjectsService {
       })
     );
   }
-
-  private handleError<T>(operation = 'operation', result?: T) {
-    return (err: any): Observable<T> => {
-      console.error('Error in operation', operation, ': ', err);
-      return of(result as T);
-    };
-  }
 }
