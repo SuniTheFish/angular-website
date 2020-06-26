@@ -22,7 +22,7 @@ describe('ProjectsService', () => {
     expect(service).toBeTruthy();
   });
 
-  it('should return a list of objects with correct props', () => {
+  it('should return a list of objects with correct props', (done) => {
     service.getProjects().subscribe((projects) => {
       const hasOwnProperty = Object.prototype.hasOwnProperty;
       projects.forEach((project) => {
@@ -30,6 +30,7 @@ describe('ProjectsService', () => {
         expect(hasOwnProperty.call(project, 'description')).toBe(true);
         expect(hasOwnProperty.call(project, 'html_url')).toBe(true);
       });
+      done();
     });
   });
 });
