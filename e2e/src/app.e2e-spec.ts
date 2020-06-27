@@ -1,5 +1,5 @@
 import { AppPage } from './app.po';
-import { browser, logging } from 'protractor';
+import { browser, logging, element, by } from 'protractor';
 
 describe('workspace-project App', () => {
   let page: AppPage;
@@ -9,8 +9,18 @@ describe('workspace-project App', () => {
   });
 
   it('should display welcome message', () => {
-    page.navigateTo();
-    expect(page.getTitleText()).toEqual('angular-website app is running!');
+    page.navigateToHome();
+    expect(page.getTitleText()).toEqual('Welcome!');
+  });
+
+  it('should display projects message', () => {
+    page.navigateToProjects();
+    expect(page.getTitleText()).toEqual('Projects');
+  });
+
+  it('displays projects', () => {
+    page.navigateToProjects();
+    expect(element.all(by.className('project')).isPresent()).toBeTruthy();
   });
 
   afterEach(async () => {
