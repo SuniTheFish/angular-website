@@ -1,22 +1,15 @@
 <div class="banner">
   <h1>Projects</h1>
 </div>
-<div *ngIf="projects; else loadingProjects">
-  <div *ngFor="let project of projects.slice(start, start + size)" class="project">
+<div *ngIf="projects">
+  <div *ngFor="let project of projects | async" class="project">
     <h2>
       <a href="{{project.homepage || project.html_url}}" target="_blank"
-        rel="noopener noreferrer">
-        {{project.name | dashToSpace | camelAddSpaces | titlecase}}
-      </a>
+        rel="noopener noreferrer">{{project.name | dashToSpace | camelAddSpaces | titlecase}}</a>
     </h2>
     <h3 *ngIf="project.homepage">
-      <a href="{{project.html_url}}" target="_blank" rel="noopener noreferrer">
-        (repo)
-      </a>
+      <a href="{{project.html_url}}" target="_blank" rel="noopener noreferrer">(repo)</a>
     </h3>
-    <markdown ngPreserveWhitespaces>{{project.description || '(no description)'}}</markdown>
+    <p>{{project.description || '(no description)'}}</p>
   </div>
 </div>
-<ng-template #loadingProjects>
-  <h2>loading projects...</h2>
-</ng-template>

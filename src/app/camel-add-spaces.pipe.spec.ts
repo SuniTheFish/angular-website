@@ -13,7 +13,7 @@ describe('CamelAddSpacesPipe', () => {
 
   it('adds spaces to camelcase', () => {
     const initial = 'TheQuickBrownFoxJumpsOverTheLazyDog';
-    expect(pipe.transform(initial)).toBe(
+    expect(pipe.transform(initial)).toEqual(
       'The Quick Brown Fox Jumps Over The Lazy Dog',
       'does not successfully add spaces'
     );
