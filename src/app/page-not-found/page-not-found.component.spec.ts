@@ -22,4 +22,10 @@ describe('PageNotFoundComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should contain 404', () => {
+    const rootDebug = fixture.debugElement;
+    const root: HTMLElement = rootDebug.nativeElement;
+    expect(root.textContent).toContain('404');
+  });
 });
