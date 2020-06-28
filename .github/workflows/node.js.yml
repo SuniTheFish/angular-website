@@ -29,4 +29,6 @@ jobs:
     - name: Run build
       run: yarn build
     - name: Run tests
-      run: yarn test
+      run: yarn test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
+    - name: Run end-to-end tests
+      run: yarn e2e -- --protractor-config=e2e/protractor-ci.conf.js
