@@ -1,6 +1,3 @@
-# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
-
 name: Node.js CI
 
 on:
@@ -14,21 +11,33 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [10.x, 12.x, 14.x]
-
     steps:
     - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Use Node.js 14.x
       uses: actions/setup-node@v1
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: 14.x
+
+    - name: Cache yarn cache
+      uses: actions/cache@v2
+      env:
+        cache-name: cache-yarn-cache
+      with:
+        path: ${{ yarn cache dir }}
+        key: ${{ runner.os }}-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-build-${{ env.cache-name }}-
+          ${{ runner.os }}-build-
+          ${{ runner.os }}-
+
     - name: Install dependencies
       run: yarn --frozen-lockfile
+
     - name: Run build
       run: yarn build
+
     - name: Run tests
       run: yarn test --no-watch --no-progress --browsers=ChromeHeadlessCI
+
     - name: Run end-to-end tests
       run: yarn e2e --protractor-config=e2e/protractor-ci.conf.js
