@@ -124,8 +124,7 @@ async function main() {
   router.delete('/:id', async (req, res) => {
     const id = req.params.id;
     if (!(await collectionHasId(postsCollection, id))) {
-      res.status(404);
-      res.json(getError('id does not exist'));
+      res.sendStatus(404);
       return;
     }
     try {
@@ -133,8 +132,7 @@ async function main() {
       res.sendStatus(200);
     } catch (err) {
       debug(err);
-      res.status(400);
-      res.json(getError('internal server error'));
+      res.sendStatus(400);
     }
   });
 }
