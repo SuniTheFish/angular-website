@@ -2,7 +2,7 @@
 
 ul {
   list-style-type: none;
-  background-color: $orange;
+  background-color: $mid;
   margin: 0;
   padding: 0;
   display: flex;
@@ -28,11 +28,11 @@ a {
   font-family: $header-font-stack;
   text-decoration: none;
   text-align: center;
-  color: $black;
+  color: $dark;
 }
 
 .active {
-  color: white;
+  color: $light;
 }
 
 @media only screen and (min-width: 600px) {

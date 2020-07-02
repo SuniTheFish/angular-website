@@ -1,1 +1,7 @@
-<p>blog works!</p>
+<div class="banner">
+  <h1>Blog</h1>
+</div>
+<div *ngFor="let post of posts | async" class="project">
+  <h2>{{post.title}}</h2>
+  <p>{{post.content}}</p>
+</div>

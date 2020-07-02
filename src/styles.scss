@@ -47,8 +47,8 @@ html, body {
 }
 
 a {
-  color: $light-orange;
+  color: $unclicked-link;
   &:visited {
-    color: $dark-orange;
+    color: $clicked-link;
   }
 }
