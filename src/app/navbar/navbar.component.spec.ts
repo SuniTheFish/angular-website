@@ -20,7 +20,7 @@ describe('NavbarComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(NavbarComponent);
     component = fixture.componentInstance;
-    paths = ['/', '/projects'].map((str) => window.origin + str);
+    paths = ['/', '/projects', '/blog'].map((str) => window.origin + str);
     fixture.detectChanges();
   });
 
