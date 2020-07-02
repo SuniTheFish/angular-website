@@ -10,6 +10,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { NavbarComponent } from './navbar/navbar.component';
 import { DashToSpacePipe } from './dash-to-space.pipe';
 import { CamelAddSpacesPipe } from './camel-add-spaces.pipe';
+import { BlogComponent } from './blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { CamelAddSpacesPipe } from './camel-add-spaces.pipe';
     NavbarComponent,
     DashToSpacePipe,
     CamelAddSpacesPipe,
+    BlogComponent,
   ],
   imports: [
     BrowserModule,
